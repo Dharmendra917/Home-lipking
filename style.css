@@ -1,0 +1,956 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main #page1{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://hannahlipking.com/wp-content/uploads/2023/02/grainy-bg-green-100.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'gilroy';
+    overflow: hidden;
+}
+#page1 #page_i{
+    border: 1px solid #CBD46A;
+    height: 97%;
+    width: 97%;
+    padding: 1%;
+    color: #CBD46A;
+    position: relative;
+}
+#page_i nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page_i nav .box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #CBD46A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CBD46A;
+}
+#page_i nav h2{
+    font-weight: 550;
+}
+nav h2 span{
+    font-family: 'voyage';
+    font-weight: 500;
+}
+#page_i nav .box i:hover{
+    cursor: pointer;
+    color: orange;
+}
+/* ------------b_nav------------------------- */
+#page_i .b_nav{
+   width: 98%;
+    bottom: 2%;
+    position: absolute;
+
+}
+#page_i .b_nav .b_nav_i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page_i .b_nav .r_container h3{
+    font-weight: 550;
+}
+/* ---------------one_circle-------------------------------- */
+#page_i .one_circle{
+    width: 55%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-40%,-40%);
+    /* background-color: gainsboro; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   animation: move1 4s infinite ease-in;
+}
+#page_i .one_circle img{
+    object-fit: cover;
+    object-position: center;
+    width: 60%;
+    height: 75%;   
+}
+@keyframes move1 {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-35px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+  
+}
+/* -------mashroom-img------------ */
+#page_i .mashroom{
+    width: 50%;
+    height: 50%;
+    left: 35%;
+    top: 1%;
+    transform: translate(-50%,0%);
+    /* background-color: gray; */
+    position: absolute;
+    /* ----------- */
+    animation: move2 4s infinite ease-in;
+}
+#page_i .mashroom img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes move2 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* ---------face---------------- */
+.face{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 35%;
+    top: 2%;
+    transform: translate(-50%,0%);
+    /* --------------- */
+    animation: move3 4s infinite ease-in;
+}
+.face img{
+    width: 100%;
+    height: 200%;
+}
+@keyframes move3{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-2.5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* ---------flower------------------ */
+.flower{
+    width: 15%;
+    position: absolute;
+    bottom: 5%;
+    left: 62%;
+    transform: translate(-50%,0%);
+}
+.flower img{
+    width: 100%;
+    /* height: 100%; */
+}
+/* ----------eal-------- */
+.eal{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 35.5%;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    animation: move4 4s infinite ease-in;
+}
+.eal img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes move4{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* -----butterfly--------------- */
+.butterfly{
+    position: absolute;
+    bottom: 15%;
+    width: 150px;
+    height: 150px;
+    transform: rotate(50deg);
+    z-index: 9999;
+}
+.i_butterfly{
+    position:relative;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+.butterfly img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.i_butterfly .b_left img{
+    animation: move5 2s infinite ease-in;
+}
+@keyframes move5 {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(35deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}.i_butterfly .b_right img{
+    animation: move6 2s infinite ease-in;
+}
+@keyframes move6 {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(35deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+/* --------------text---------------- */
+.text{
+    position: absolute;
+    top:35%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text h3{
+    font-weight: 400;
+}
+.text h1{
+    font-family: "voyage";
+    font-size: 8vw;
+    font-weight: 500;
+    white-space: nowrap;
+}
+/* -----------menu_box------------ */
+#page1 .menu_box{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    right: -250px;
+    top: 0%;
+    background-image: url(https://hannahlipking.com/wp-content/uploads/2023/03/grainy-bg-cream-100.jpg);
+    transition: right .5s;
+    display: none;
+}
+.i_menu_box{
+    width: 92%;
+    height: 92%;
+    border: 1.4px solid #25544e;
+}
+.menu_text{
+    display: grid;
+    padding: 15px 35px;
+}
+.menu_text i{
+    font-size: 3vw;
+    color:#25544e;
+    margin-left: 80%;
+    cursor: pointer;
+}
+.menu_text ul{
+    list-style: none;
+}
+.menu_text ul li{
+    margin-bottom: 10px;
+    padding: 5px 0px;
+}
+.menu_text ul li p{
+    width: 100%;
+    height: 1px;
+    background-color: #25544e;
+    padding: 0;
+}
+.menu_text ul li a{
+    text-decoration: none;
+    color: #25544e;
+    font-weight: 600;
+}
+ul li a:hover{
+    color: orange;
+    transition: 1s;
+}
+/* --------------service_bar-------------- */
+.service_bar{
+    position: absolute;
+    width: 300px;
+    height: 370px;
+    left: 55%;
+    top: -50%;
+    transform: translate(-50%,0%);
+    background-image: url(https://hannahlipking.com/wp-content/uploads/2023/03/grainy-bg-cream-100.jpg);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s top;
+}
+.i_service_bar{
+    width: 94%;
+    height: 94%;
+    border: 1px solid #25544e;
+    position:relative;
+    font-family: "gilroy";
+}
+.i_service_bar .box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #25544e;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i_service_bar .box i{
+    font-size: 4vw;
+    font-weight: 100;
+    color: #25544e;
+    cursor: pointer;
+}
+.i_service_bar .content{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    color: #25544e;
+}
+.i_service_bar .content h2{
+     font-family: 'gilroy';
+}
+.i_service_bar .content ul{
+    list-style: none;
+    padding: 1px;
+}
+.content ul li{
+    margin: 10px 0px;
+    padding: 5px 0px;
+    font-size: 15px;
+    font-weight: 300;
+    border-bottom: 1.5px solid #25544e;
+}
+
+/* ------------page2----------- */
+#page2{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(62, 112, 62);
+    font-family: "gilroy";
+    display: flex;
+}
+#page2 .box{
+    width: 50%;
+    height: 100%;
+    background-color: #d39b47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page2 .inner_box{
+    width: 95%;
+    height: 95%;
+    border: 1px solid white;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+#page2 .inner_box img{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+   cursor: pointer;
+}
+#page2 .inner_box img:hover{
+    scale: 1.1;
+}
+#page2 .inner_box .nav{
+    padding: 10px 15px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+.inner_box .nav span{
+    font-family: "voyage";
+}
+#page2 .inner_box .b_nav{
+    padding: 10px 10px;
+    width: 100%;
+    position: absolute;  
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+.inner_box .b_nav span{
+    display: flex;
+    gap: 5px;
+}
+#page2 .inner_box .layer{
+    /* pointer-events:none; */
+    width: 100%;
+    height: 100%;
+    background-color: #d39b47;
+    position: absolute;
+    top: 0%;
+    transition: 2s;
+    cursor: pointer;
+}
+#page2 .inner_box .layer:hover{
+    background-color: #d39b47ac;
+}
+#page2 .inner_box .text{
+    pointer-events: none;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#page2 .inner_box .text h1{
+    font-size: 3vw;
+}
+#page2 .box.two{
+    background-color: white;
+}
+#page2 .box .inner_box.second{
+    background-color: white;
+    color: #25544e;
+    border: 1px solid #25544e;
+}
+#page2 .box.two .inner_box.second .layer.sec{
+      background-color: white;
+}
+#page2 .box.two .inner_box.second .layer.sec:hover{
+    background-color: rgba(255, 255, 255, 0.546);
+}
+.box .inner_box.second .icon_box{
+    border: 1px solid #25544e;
+}
+/* --------------icon_box------------------- */
+.icon_box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid white;
+    z-index: 999;
+}
+.icon_box i{
+    font-size: 2vw;
+}
+/* ---------page3------------------------------------------ */
+#page3{
+    width: 100%;
+    height: 65vh;
+    background-color: #aee4dd;
+    font-family: 'gilroy';
+    display: flex;
+}
+#page3 .box{
+    height: 100%;
+    width: 33.33%;
+    background-color: #25544e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: flex-wrap; */
+}
+#page3 .box .inner_box{
+    width: 95%;
+    height: 95%;
+    border: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#page3 .box .inner_box .img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 3s;
+}
+#page3 .box .inner_box .img img{
+    width: 100%;
+    height: 100%;
+}
+#page3 .box .inner_box .img .layer{
+    width: 100%;
+    height: 100%;
+    background-color: #25544e;
+    position: absolute;
+    top: 0%;
+    transition: 3s;
+}
+#page3 .box .inner_box .nav{
+    padding: 10px 10px;
+    position: absolute;
+    top: 0%;
+    color: white;
+}
+#page3 .box .b_nav{
+    width: 100%;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#page3 .box .text{
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1px;
+}
+#page3 .box .text h1{
+    font-size: 2.5vw;
+    color: white;
+}
+/* ----------box_two----------- */
+#page3 .box.two{
+    background-color: #CBD46A;
+}
+#page3 .box.two .inner_box.two{
+     border: 1px solid #25544e;
+     color:#25544e;
+     overflow: hidden;
+}
+#page3 .box.two .layer.two{
+    background-color: #cbd46a;
+}
+#page3 .box.two .inner_box.two .text.two h1{
+    color: #25544e;
+}
+#page3  .icon_box.two{
+    border: 1px solid #25544e;
+    color: #25544e;
+}
+#page3 .inner_box.two .b_nav{
+    color: #25544e;
+}
+/* ---------box_three--------- */
+#page3 .box.three{
+    background-color: #74B7B7 ;
+}
+#page3 .box.three .inner_box.three .layer{
+    background-color: #74b7b7 ;
+}
+/* ---------page4---------------------- */
+#page4{
+    width: 100%;
+    height: 125vh;
+    background-image: url(https://hannahlipking.com/wp-content/uploads/2023/03/grainy-bg-cream-100.jpg);
+    color: #25544e;
+    font-family: "Gilroy";
+}
+#page4 nav{
+    padding: 25px 25px;
+}
+#page4 nav span{
+    font-family: "voyage";
+}
+#page4 .inner_page{
+    width: 100%;
+    height: 115vh;
+    display: flex;
+}
+#page4 .left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+#page4 .right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+#page4 .left .text{
+    padding: 1px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+#page4 .left .text h1{
+    font-family: "voyage";
+    font-size: 3vw;
+    text-align: start;
+}
+#page4 .left .snail{
+    width: 35vw;
+    height: 60vh;
+    /* background-color: yellow; */
+    position: absolute;
+    bottom: -1%;
+    left: -40%;
+    z-index: 99;
+}
+#page4 .snail .inner_snail{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(120, 84, 84); */
+    position: relative;
+}
+.inner_snail .moon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    transform: translate(-50%,0%);
+    animation: moon 4s infinite ease-in;
+}
+@keyframes moon {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.inner_snail .mashroom{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%,0%);
+    transform: rotate(55deg);
+    animation: masroom 4s infinite ease;
+}
+@keyframes masroom {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.inner_snail img{
+    width: 100%;
+    height: 100%;
+}
+.inner_snail .snail_img{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 90%;
+}
+/* ---------right----------- */
+#page4 .right .text{
+    padding: 0% 5%;
+    margin-bottom: 5%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 90%;
+    text-align: start;
+}
+#page4 .right_box{
+    padding: 0% 5%;
+    width: 90%;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+#page4 .right_box ul{
+    list-style: none;
+    margin-bottom: 15px;
+}
+#page4 .right_box ul li{
+    padding: 15px 15px;
+    margin-bottom: 5px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #25544e;
+    font-weight: 500;
+}
+#page4 .right_box ul li a{
+    text-decoration: none;
+    color: #25544e;
+   font-size: 1.199vw;
+}
+#page4 .right_box ul li h3{
+    font-weight: 500;
+}
+#page4 .right_box button{
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #25544e;
+    border: 1px solid #25544e;
+    margin-top: 5%;
+    position: relative;
+    z-index: 9999;
+}
+#page4 .right_box button::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 0%;
+    background: #25544e;
+    z-index: -9998;
+    transition: .5s;
+}
+#page4 .right .right_box button:hover::after{
+    color: #74B7B7;
+    height: 100%;
+    cursor: pointer;
+}
+#page4 .right .right_box button:hover{
+    color:white;
+}
+/* -------page5-------- */
+#page5{
+    width: 100%;
+    height: 70vh;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "gilroy";
+    overflow: hidden;
+}
+#page5 .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #25544e;
+}
+#page5 .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#page5 .inner{
+    width: 95%;
+    height: 95%;
+    border: 1px solid #CBD46A;
+}
+#page5 .left h2{
+    position: absolute;
+    left: 10%;
+    color: #CBD46A;
+    top: 15%;
+    font-size: 20px;
+}
+#page5 h2 span{
+    font-family: "voyage";
+}
+
+#page5 .form{
+    width: 70%;
+    position: absolute;
+    /* background-color: rgb(214, 56, 56); */
+    top: 30%;
+    left: 15%;
+}
+#page5 .form .inner_form{
+    display: grid;
+}
+
+.inner_form input{
+    margin: 5px 0px;
+    padding: 20px 10px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #cbd46a;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    color: #CBD46A;
+}
+input::placeholder{
+    color: #CBD46A;
+}
+#page5 .left button{
+    /* display: block; */
+    width: 11%;
+    padding: 5px 10px ;
+    background-color: transparent;
+    color: #CBD46A;
+    border-color: #CBD46A;
+    margin-top: 5%;
+    margin-left: 90%;
+}
+#page5 .left button:hover{
+    color: white;
+    border-color: white;
+}
+/* ---------mouth--------------- */
+#page5 .right .mouth{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 200px;
+    height: 200px;
+}
+#page5 .right .mouth .mouth_inside{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#page5 .right .mouth .inner_mouth{
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* --------------------------- */
+#page5 .right .spiral{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0%;
+    top: 15%;
+    z-index: -9;
+    animation: spiral 4s infinite ease-in-out;
+    
+}
+/* -----animation------- */
+@keyframes spiral {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#page5 .right .lotus{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(0%,-50%);
+    z-index: 9;
+    animation: lotus 4s infinite ease-in-out;
+}
+/* -----animation------- */
+@keyframes lotus {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-25px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+#page5 .right .flower{
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    z-index: 999;
+}
+#page5 .right .mouth img{
+    width: 100%;
+    height: 100%;
+}
+#page5 .right .inner{
+    position: relative;
+    border-color: #25544e;
+}
+#page5 .right .inner .text {
+    width: 100%;
+    color: #25544e;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+#page5 .right .inner .text h1{
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+#page5 .right .link{
+    margin-left: 30%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+#page5 .right .link a{
+    text-decoration: none;
+    color: #25544e;
+    font-family: 'gilroy';
+}
+#page5 .right .link a:hover{
+    transition: .5s;
+    color: #d39b47;
+}
+#page5 .right .b_nav{
+    padding: 0% 5%;
+    width: 100%;
+    color: #25544e;
+    font-size: .7vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+}
